@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,700;1,300;1,400;1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.contain{    
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;  
+    background-color: rgb(45, 46, 48);
+}
+
+.outerdiv{
+  width: 100%;
+  height: 98%;
+  border: 1px solid white;
+}
+header{
+  height: 8%;
+  padding: 1rem 3rem;
+}
+header button{
+  padding: 0 1rem;
+  height: 2.3rem;
+  border: none;
+  color: white;
+  background-color: rgb(230, 136, 41);
+  font-weight: 500;
+  border-radius: .2rem;
+  font-size: clamp(.8rem, 2vw, 1.2rem)
+}
+header button:hover{
+  color: rgb(230, 136, 41);
+  background-color: white;
+  cursor: pointer;
+  font-weight: 900;
+}
+#home-btn{
+  width: 7%;
+}
+header ul li{
+  list-style: none;
+  color: white;
+  padding-bottom: 1rem;
+  font-size: clamp(.8rem, 2.5vw, 1.2rem)
+}
+header ul li:hover{ 
+  border-bottom: 2px solid rgb(230, 136, 41) ;
+  cursor: pointer;
+  font-weight: 900;
+}
+.link{
+  text-decoration: none;
+  color: white;
+}
+.main{
+  height: 92%;
+}
+.left{
+  height: 100%;
+  justify-content: center;
+}
+.left-inner{
+  height: 40%;
+  width: 80%;
+}
+.left-inner p{
+  font-size: clamp(.6rem, 2.5vw, 1.2rem);
+}
+
+.left-inner h2{
+  font-size: clamp(1.6rem, 3vw, 3.5rem);
+  font-weight: 900;
+}
+.left-inner span{
+  font-weight: 700;
+  font-size: clamp(2.4rem, 3.5vw, 7rem);
+ color: rgb(230, 136, 41);
+}
+.left-inner h6{
+  font-weight: 400;
+  font-size: clamp(1rem, 1.3vw, 1.8rem);
+  padding-bottom: .2rem;
+}
+
+.left-bottom{
+  height: 20%;
+  width: 80%;
+}
+.left-bottom img{
+  max-width: 10%;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+#react-logo{
+  max-width: 8%;
+}
+#redux-logo{
+  max-width: 8%;
+  padding-left: 1rem;
+}
+.bounce-2 {
+  animation-name: bounce-2;
+  animation-timing-function: ease;
+}
+@keyframes bounce-2 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+.right{
+  height: 100%;
+}
+.right-inner{
+  height: 80%;
+  max-width: 70%;
+  border-radius: 50%;
+  background-color: rgb(39, 39, 41);
+}
+
+.right-inner img{ 
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* bottom: 2%; */
+}
+
+.social-links{
+  color: white;
+  font-size: clamp(2rem, 2.4vw, 2.6rem);
+}
+@media only screen and (max-width: 992px) {
+  header{
+    height: 12%;
+    padding: .8rem 1rem;
+  }
+  .left{
+    height: 50%;
+  }
+  .right{
+    height: 42%;
+  }
+  .left-bottom img{
+    max-width: 18%;
+  }
+  #react-logo{
+      max-width: 14%;
+  }
+  #redux-logo{
+      max-width: 16%;
+  }
+  .left-inner{
+    height: 80%;
+  }
+  .right-inner img{ 
+    object-fit: contain;
+    position: relative;
+    top: 6%;
+  }
+  @keyframes bounce-2 {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(-30px); }
+      100% { transform: translateY(0); }
+  }
+}
