@@ -16,7 +16,7 @@ const About = () => {
                     <li><Link className='link' to="/about">about</Link></li>
                     <li><Link className='link' to="/projects">projects</Link></li>
                   </ul>
-                  <button >Contact</button>
+                  <Link id='contact-btn' to="/contact" >Contact</Link>
                 </header>
                 <div className='d-flex flex-row flex-lg-column w-100 align-items-center justify-content-center gap-3 pb-lg-5'>
                   <a href='https://github.com/rajat62'><AiFillGithub  className='social-links' /></a>

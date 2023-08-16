@@ -1,45 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,700;1,300;1,400;1,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Comfortaa', cursive;
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+  /* font-family: 'Source Code Pro', monospace; */
 }
 .contain{    
     height: 100vh;
     width: 100vw;
-    padding: 2rem;  
-    background-color: rgb(45, 46, 48);
+    padding: 4vh 4vw;  
+    background-color: rgb(42, 43, 44);
 }
 
 .outerdiv{
-  width: 100%;
-  height: 98%;
+  width: 92vw;
+  height: 92vh;
   border: 1px solid white;
 }
-header{
-  height: 8%;
+.header{
+  width: 92vw;
+  height: 8vh;
   padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
 }
-header button{
+#contact-btn{
+  text-decoration: none;
   padding: 0 1rem;
-  height: 2.3rem;
+  height: 4vh;
   border: none;
   color: white;
   background-color: rgb(230, 136, 41);
   font-weight: 500;
   border-radius: .2rem;
-  font-size: clamp(.8rem, 2vw, 1.2rem)
+  font-size: clamp(.8rem, 2vw, 1.2rem);
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
-header button:hover{
+#contact-btn:hover{
   color: rgb(230, 136, 41);
   background-color: white;
   cursor: pointer;
   font-weight: 900;
 }
-#home-btn{
-  width: 7%;
-}
+
 header ul li{
   list-style: none;
   color: white;
@@ -55,11 +65,8 @@ header ul li:hover{
   text-decoration: none;
   color: white;
 }
-.main{
-  height: 92%;
-}
 .left{
-  height: 100%;
+  height: 84vh;
   justify-content: center;
 }
 .left-inner{
@@ -73,6 +80,7 @@ header ul li:hover{
 .left-inner h2{
   font-size: clamp(1.6rem, 3vw, 3.5rem);
   font-weight: 900;
+  word-spacing: 1rem;
 }
 .left-inner span{
   font-weight: 700;
@@ -90,16 +98,16 @@ header ul li:hover{
   width: 80%;
 }
 .left-bottom img{
-  max-width: 10%;
+  max-width: 12%;
   animation-duration: 3s;
   animation-iteration-count: infinite;
   transform-origin: bottom;
 }
 #react-logo{
-  max-width: 8%;
+  max-width: 10%;
 }
 #redux-logo{
-  max-width: 8%;
+  max-width: 10%;
   padding-left: 1rem;
 }
 .bounce-2 {
@@ -112,36 +120,31 @@ header ul li:hover{
   100% { transform: translateY(0); }
 }
 .right{
-  height: 100%;
+  height: 84vh;
 }
 .right-inner{
-  height: 80%;
-  max-width: 70%;
+  max-width: 80%;
+  width: auto;
+  max-height: 82%;
+  height: auto;
   border-radius: 50%;
   background-color: rgb(39, 39, 41);
 }
 
 .right-inner img{ 
-  position: relative;
-  height: 100%;
-  width: 100%;
-  /* bottom: 2%; */
+  height: 70vh;
 }
-
 .social-links{
   color: white;
   font-size: clamp(2rem, 2.4vw, 2.6rem);
 }
 @media only screen and (max-width: 992px) {
-  header{
-    height: 12%;
-    padding: .8rem 1rem;
-  }
+
   .left{
-    height: 50%;
+    height: 42vh;
   }
   .right{
-    height: 42%;
+    height: 42vh;
   }
   .left-bottom img{
     max-width: 18%;
@@ -156,10 +159,9 @@ header ul li:hover{
     height: 80%;
   }
   .right-inner img{ 
-    object-fit: contain;
-    position: relative;
-    top: 6%;
+    height: 45vh;
   }
+  
   @keyframes bounce-2 {
       0%   { transform: translateY(0); }
       50%  { transform: translateY(-30px); }

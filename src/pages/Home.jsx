@@ -10,16 +10,16 @@ const Home = () => {
 
     
       <div className="outerdiv d-flex flex-column">
-        <header className="d-flex flex-row justify-content-between pe-3">
-          <ul className="d-flex flex-row gap-4">
+        <header className="header ">
+          <ul className="d-flex flex-row gap-4 p-0">
             <li><Link className='link' to="/">portfolio</Link></li>
             <li><Link className='link' to="/about">about</Link></li>
             <li><Link className='link' to="/projects">projects</Link></li>
           </ul>
-          <button id='home-btn' >Contact Me</button>
+          <Link id='contact-btn' to="/contact" >Contact</Link>
         </header>
-        <div className="main d-flex flex-column flex-lg-row">
-          <div className="left w-100 w-lg-50 d-flex flex-column gap-4 align-items-center">
+        <div className="main d-flex flex-column flex-lg-row justify-content-between">
+          <div className="left w-lg-50 w-100 d-flex flex-column gap-lg-4  gap-2 align-items-center">
             <div className="left-inner d-flex flex-column gap-0 gap-lg-2 align-items-center align-items-lg-start ">
               <p className="text-white">Hi There,</p>
               <h2 className="pt-0 pt-lg-2 pb-0 pb-lg-2 text-white text-center text-lg-start">
@@ -28,7 +28,7 @@ const Home = () => {
               <h6 className="text-white pb-1">I am a frontend web developer</h6>
               <p className="text-white">I love working with React.</p>
             </div>
-            <div className="left-bottom d-flex flex-row pt-2 align-items-center justify-content-center justify-content-lg-start ">
+            <div className="left-bottom d-flex flex-row pt-2  align-items-center justify-content-center justify-content-lg-start ">
               <img src="/images/js-logo.png" className="bounce-2" />
               <img
                 src="/images/react-logo.png"
@@ -48,8 +48,8 @@ const Home = () => {
               <AiFillLinkedin className='social-links' />
             </div>
           </div>
-          <div className="right d-flex flex-row align-items-end justify-content-center w-100 w-lg-50">
-            <div className="right-inner d-flex justify-content-center">
+          <div className="right d-flex flex-row align-items-end justify-content-center w-100 w-lg-50 pb-4">
+            <div className="right-inner d-flex justify-content-center align-items-end">
               <img src="/images/Rajat.png"/>  
             </div>
           </div>
