@@ -25,8 +25,8 @@ const Home = () => {
               <h2 className="pt-0 pt-lg-2 pb-0 pb-lg-2 text-white text-center text-lg-start">
                 I am <span>Rajat Choudhary</span>
               </h2>
-              <h6 className="text-white pb-1">I am a frontend web developer</h6>
-              <p className="text-white">I love working with React.</p>
+              <h6 className="text-white pb-1 pt-1 pt-lg-3">Passionate Frontend Developer with a Love for React</h6>
+              <p className="pt-1 pt-lg-3">I enjoy learning, solving problems, and applying technology to make life simpler..</p>
             </div>
             <div className="left-bottom d-flex flex-row pt-2  align-items-center justify-content-center justify-content-lg-start ">
               <img src="/images/js-logo.png" className="bounce-2" />

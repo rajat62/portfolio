@@ -71,7 +71,7 @@ header ul li:hover{
 }
 .left-inner{
   height: 40%;
-  width: 80%;
+  width: 85%;
 }
 .left-inner p{
   font-size: clamp(.6rem, 2.5vw, 1.2rem);
@@ -80,19 +80,24 @@ header ul li:hover{
 .left-inner h2{
   font-size: clamp(1.6rem, 3vw, 3.5rem);
   font-weight: 900;
-  word-spacing: 1rem;
+  /* word-spacing: .5rem; */
 }
 .left-inner span{
   font-weight: 700;
   font-size: clamp(2.4rem, 3.5vw, 7rem);
- color: rgb(230, 136, 41);
+ color: rgb(255, 165, 0);
 }
 .left-inner h6{
   font-weight: 400;
   font-size: clamp(1rem, 1.3vw, 1.8rem);
   padding-bottom: .2rem;
+  text-align: center;
 }
-
+.left-inner p{
+  width: 75%;
+  line-height: 2rem;
+  color: rgb(246, 197, 128);
+}
 .left-bottom{
   height: 20%;
   width: 80%;
@@ -123,12 +128,13 @@ header ul li:hover{
   height: 84vh;
 }
 .right-inner{
-  max-width: 80%;
+  max-width: 70%;
   width: auto;
-  max-height: 82%;
+  max-height: 78%;
   height: auto;
   border-radius: 50%;
-  background-color: rgb(39, 39, 41);
+  background-color: rgb(255, 165, 0, .9);
+  
 }
 
 .right-inner img{ 
@@ -157,6 +163,15 @@ header ul li:hover{
   }
   .left-inner{
     height: 80%;
+  }
+  .left-inner p{
+    text-align: center;
+  }
+  .right-inner{
+    max-width: 60%;
+    width: auto;
+    max-height: 82%;
+    height: auto;
   }
   .right-inner img{ 
     height: 45vh;

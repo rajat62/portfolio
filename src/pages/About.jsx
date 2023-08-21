@@ -33,6 +33,12 @@ const About = () => {
                   <h5 className='pb-1 pb-lg-3'>Hobby</h5>
                   <p>Gardening</p>
                 </div>
+                <div className='more-about-me'>
+                  <h5 className='pb-1 pb-lg-3'>What Defines Me </h5>
+                  <p>Curious Explorer</p>
+                  <p>Creative Innovator</p>
+                  <p>Future Visionary</p>
+                </div>
                 
                 <div className='more-about-me'>
                   <h5 className='pb-1 pb-lg-3'>Extra-Curricular Activities</h5>
@@ -42,7 +48,7 @@ const About = () => {
                 </div>
               </div>
               <div className='pt-4'>
-                  <h5 className='pb-1 pb-lg-3' id='techHeading'>Technologies</h5>
+                  <h5 className='pb-1 pb-lg-3' id='techHeading'>Technologies I Use</h5>
                   <div className='d-flex gap-2'>
                     <DiReact className='techIcons'/>
                     <DiNodejsSmall className='techIcons'/>
