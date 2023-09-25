@@ -5,9 +5,9 @@ import "../styles/Project.css"
 const Project = () => {
 
       const projectData = [
-            { name: "Tour Application", image: "/images/1.png", link: "", tech: [ "React","Redux", "MongoDB" ]},
-            { name: "Expense Tracker", image: "/images/2.png", link: "", tech: [ "React","Redux", "MongoDB" ]},
-            { name: "Online Shopping App ", image: "/images/3.png", link: "", tech: [ "EJS", "MongoDB" ]},
+            { name: "Adventure Addicts", image: "/images/adventure_addicts_logo.png", link: "https://github.com/rajat62/Adventure_Addicts", tech: [ "React","Redux", "MongoDB" ]},
+            { name: "Finance Buddy", image: "/images/finance_buddy_logo.png", link: "https://github.com/rajat62/Finance_Buddy", tech: [ "React","Redux", "MongoDB" ]},
+            { name: "Apna Bazaar", image: "/images/apna_bazaar_logo.png", link: "https://github.com/rajat62/Apna_Bazaar", tech: [ "EJS", "MongoDB" ]},
       ]
   return (
       <div className='project'>
@@ -35,7 +35,7 @@ const Project = () => {
                                     return (
                                           <div className='single-project d-flex flex-column gap-2 gap-lg-3 align-items-center'>
                                                 <img src={item.image} className='rounded-5'/>
-                                                <h6><a href={item.link}>Github</a></h6>
+                                                <h6><a href={item.link}>{item.name}</a></h6>
                                                 <div className='d-flex gap-3'>
                                                       {
                                                             item.tech.map((ele)=>{

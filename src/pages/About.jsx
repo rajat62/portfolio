@@ -29,23 +29,23 @@ const About = () => {
               <p className='pt-4'>Technology has constantly sparked my interest. I began my web development career by developing <span>WordPress</span> websites using <span>Elementor</span>. Then I continued to learn and discovered the world of <span>React</span>. I appreciate every aspect of learning and continue growing my knowledge through practice.</p>
               <h4 className=' pt-2 pt-lg-4'>.More About Me</h4>
               <div className='d-flex gap-5 pt-2 pt-lg-4'>
-                <div className='more-about-me'>
+                {/* <div className='more-about-me'>
                   <h5 className='pb-1 pb-lg-3'>Hobby</h5>
                   <p>Gardening</p>
-                </div>
+                </div> */}
                 <div className='more-about-me'>
                   <h5 className='pb-1 pb-lg-3'>What Defines Me </h5>
-                  <p>Curious Explorer</p>
-                  <p>Creative Innovator</p>
-                  <p>Future Visionary</p>
+                  <p><span style={{color:"rgb(246, 197, 128)"}}>Curious Explorer</span> paints me as an continuous knowledge seeker.</p>
+                  <p><span style={{color:"rgb(246, 197, 128)"}}>Creative Innovator</span> portrays me as a visionary architect of inventive solutions.</p>
+                  <p><span style={{color:"rgb(246, 197, 128)"}}>Future Visionary</span> casts me as a dream-weaver shaping a brighter tomorrow.</p>
                 </div>
                 
-                <div className='more-about-me'>
+                {/* <div className='more-about-me'>
                   <h5 className='pb-1 pb-lg-3'>Extra-Curricular Activities</h5>
                   <p>NCC Cadet</p>
                   <p>Participation in Hackathons</p>
                   <p>State Level in Cricket</p>
-                </div>
+                </div> */}
               </div>
               <div className='pt-4'>
                   <h5 className='pb-1 pb-lg-3' id='techHeading'>Technologies I Use</h5>

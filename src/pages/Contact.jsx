@@ -23,11 +23,11 @@ export const Contact = () => {
                   <div className='contact-content d-flex justify-content-center align-items-center'>
                         <div className='contentDiv'>
                               <h3 className='pb-2 pb-lg-4'>. Contact Me</h3>
-                              <form className='d-flex flex-column gap-4 pt-3 pb-3'>
+                              {/* <form className='d-flex flex-column gap-4 pt-3 pb-3'>
                                     <input className='form-control' name='email' type='email' placeholder='email'/>
                                     <textarea placeholder='enter your query' class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                                     <input className='form-control btn btn-success w-50' type='submit'/>
-                              </form>
+                              </form> */}
 
                               <div className='email-link'>
                                     <h5 className='pt-5'>Email Address</h5>
